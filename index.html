@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+     @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700,900&display=swap');
+      body{
+        
+        font-family: 'Montserrat', sans-serif;
+            background:#5CB3FF;
+            
+            
+        }
+            
+          form{
+            
+            padding-left: 30px;
+            
+          }
+          
+          input{
+             width: 30%;
+             padding: 15px;
+             margin: 5px 0 22px 0;
+             background: #d3c8c8;
+             
+          }
+          .btn{
+            background: #da3232;
+            margin-left: 19px;
+            padding: 20px;
+          }
+          h2{
+            margin-left: 140px;
+          }
+
+          .r-section{
+        
+        margin-left: 850px;
+        margin-right: 1000px;
+        margin-top:-1350px;
+        padding: 480px 200px;
+        
+      }
+      .r-section p{
+        margin-top: 1px;
+        margin-left: -190px;
+        margin-right: 400px;
+        
+        
+      }
+      
+      
+    </style>
+
+
+
+  </head>
+ 
+  <body>
+    
+
+    <form action="/data.html" method="GET" id="tg" >
+      <h2>Movie Form</h2>
+      
+      <label for="title"> TITLE:</label><br />
+      <input
+        type="text"
+        id="title"
+        name="title"
+        maxlength="25"
+        required
+      /><br /><br />
+      
+      <label for="yearofproduction">YEAR OF PRODUCTION:</label><br />
+      <input type="year"  id="yearofproduction" name="yearofproduction" maxlength="4" onkeyup ="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')" required /><br /><br />
+
+      
+      <label for="sammary">SERIES INFO:</label><br />
+      <input
+        type="text"
+        id="sammary"
+        name="sammary"
+        minlength="10"
+        required
+      /><br /><br />
+      
+
+      <label for="sdetalis">SERIES DETAILS:</label><br /><br />
+      <label for="tvnetwork">TV NETWORK PREMIERE:</label><br />
+      <input
+        type="text"
+        id="sammary1"
+        name="tvnetwork"
+        
+      />
+      <br /> <br />
+      <label for="datee">DATE:</label><br />
+      <input
+      type="text"
+      id="datee"
+      name="datee"
+      min="0001-01-01" max="2021-12-31"
+      onkeyup ="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')"
+      required
+      /><br /><br />
+      <label for="genree">GENRE:</label><br />
+      <input
+        type="text"
+        id="genree"
+        name="genree"
+        
+      /><br /><br />
+      <label for="exeproduct"> EXECUTIVE PRODUCERS:</label><br />
+      <input
+        type="text"
+        id="exeproduct"
+        name="exeproduct"
+        
+      /><br /><br />
+      <label for="img" class="img">MOVE IMAGE : </label><br/>
+        <input
+         type="file"
+         id="img"
+         name="file" />
+    <br /><br />
+
+      <input  class="btn" type="submit" value="Submit" />
+      <div class="r-section" >
+       <p><strong>Title:</strong><p id="t1"></p></p>
+       <p><strong> YEAR_OF_PRODUCTION:</strong><p id="t2"></p></p>
+        <p><strong>SERIES_INFORMATION: </strong><p id="t3"></p></p>
+          <p><strong> SERIES_DETAILS(TV_NETWORK_PREMIERE):</strong><p id="t4"></p></p>
+            <p><strong>DATE:</strong> <p id="t5"></p></p>
+              <p><strong> GENRE:</strong><p id="t6"></p></p>
+                <p><strong> EXECUTIVE_PRODUCERS: </strong><p id="t7"></p></p>
+                <p><strong> MOVE_IMAGE: </strong><p id="t8"></p></p>
+                         </div>
+    </form>
+    
+    
+    
+
+    <script src="/index.js"></script>
+  </body>
+</html>
